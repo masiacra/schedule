@@ -1,0 +1,135 @@
+/* запросы mobile first */
+/* стили для любой ширины */
+
+html, body {
+	height: 100%;
+}
+
+
+/*Стили для header*/
+
+.header {
+	background-color: #BFBFBF;
+	background-image: url(../images/clouds.jpg);
+	background-size: cover;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.logo {
+	color: #4D4D4D;
+	font-size: 2em;
+	text-shadow: 2px 2px 2px rgb(0, 0, 0, .8);
+}
+
+.navigation {
+	list-style-type: none;
+	display: inline;
+	transform: all 2s;
+}
+
+.navigation li {
+	display: inline;
+
+}
+
+.navigation .button {
+	background-color: #ADD8E6;
+}
+
+.navigation .button-primary {
+	background-color: #1E90FF;
+}
+
+
+.navigation__style_small {
+	position:fixed;
+	left: 100%;
+}
+		
+.navigation__style_big {
+	left: 50%;
+}
+		
+.menu_btn {
+	position: absolute;
+	top: 0;
+	right: 2%;
+	font-size: 40px;
+	cursor: pointer;
+	color: black;
+}
+		
+.menu_btn__style_toRight::before {
+	content: ">";
+}
+		
+.menu_btn__style_toLeft::before {
+	content: "<";
+}
+
+
+
+/* стили для ширины крупнее мобильных */
+/* стили для ширины 400 пикселов и выше */
+@media (min-width: 400px) {
+ 
+}
+
+/* стили для ширины крупнее фаблетов */
+/* стили для ширины 550 пикселов и выше */
+@media (min-width: 550px) {
+	
+	/*Стили для header*/
+	.logo {
+		font-size: 2.3em;
+	}
+	
+
+}
+
+/* стили для ширины крупнее планшетов */
+
+/* стили для ширины 750 пикселов и выше */
+@media (min-width: 750px) {
+		/*Стили для header*/
+	.logo {
+		font-size: 3em;
+	}
+	
+
+}
+
+/* стили для ширины крупнее компьютерных мониторов */
+/* стили для ширины 1000 пикселов и выше */
+@media (min-width: 950px) {
+	
+	/*Стили для header*/
+	.logo {
+		font-size: 3.2em;
+	}
+	
+	.navigation__style_small {
+		position: static;
+	}
+		
+	.navigation__style_big {
+	}
+		
+	.menu_btn {
+		display: none;
+	}
+	
+	
+}
+
+/* стили для ширины крупнее компьютерных HD-мониторов */
+/* стили для ширины 1200 пикселов и выше */
+@media (min-width: 1200px) {
+	/*Стили для header*/
+	.logo {
+		font-size: 3.5em;
+	}
+	
+
+

@@ -1,0 +1,237 @@
+/* запросы mobile first */
+/* стили для любой ширины */
+
+html, body {
+	height: 100%;
+}
+
+
+/*Стили для header*/
+
+.header {
+	background-color: #BFBFBF;
+	background-image: url(../images/clouds.jpg);
+	background-size: cover;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.logo {
+	color: #4D4D4D;
+	font-size: 2em;
+	text-shadow: 2px 2px 2px rgb(0, 0, 0, .8);
+}
+
+.navigation {
+	list-style-type: none;
+	display: inline;
+}
+
+.navigation li {
+	display: inline;
+
+}
+
+.navigation .button {
+	background-color: #ADD8E6;
+}
+
+.navigation .button-primary {
+	background-color: #1E90FF;
+}
+
+/*Стили для content*/
+
+.content {
+	min-height: 90%;
+}
+
+/*Стили для поискового раздела*/
+
+.finder {
+	padding-top: 20px;
+	border-bottom: 1px solid black;
+}
+
+
+
+.finder__style_current {
+	color: #FFA500;
+}
+
+
+/*Стили для переключателей*/
+.pointers {
+	cursor: pointer;
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+/*Стили для самого табло*/
+
+.schedule {
+	padding-bottom: 30px;
+}
+
+.separator {
+	border-top: 1px solid black;
+}
+
+
+/*Стили для Footer*/
+.footer {
+	background-color: #4D4D4D;
+	background-image: linear-gradient(to right, #4D4D4D, #1A1A1A);
+	color: white;
+	text-align: center;
+}
+
+
+/*Вспомогательные стили*/
+
+.arrow {
+	position: fixed;
+	right: 5%;
+	bottom: 5%;
+	color: red;
+	font-size: 40px;
+}
+
+.arrow__style_hidden {
+	display: none;
+}
+
+.arrow__style_visible {
+	opacity: 1;
+}
+
+.arrow::before {
+	content: '▲';
+}
+
+/* стили для ширины крупнее мобильных */
+/* стили для ширины 400 пикселов и выше */
+@media (min-width: 400px) {
+ 
+}
+
+/* стили для ширины крупнее фаблетов */
+/* стили для ширины 550 пикселов и выше */
+@media (min-width: 550px) {
+	
+	/*Стили для header*/
+	.logo {
+		font-size: 2.3em;
+	}
+	
+	/*Стили для переключателей*/
+	.pointers {
+		font-size: 25px;
+	
+	}
+	
+	/*Вспомогатльные стили*/
+	.arrow {
+		right: 2%;
+		bottom: 2%;
+	}
+	
+}
+
+/* стили для ширины крупнее планшетов */
+
+/* стили для ширины 750 пикселов и выше */
+@media (min-width: 750px) {
+		/*Стили для header*/
+	.logo {
+		font-size: 3em;
+	}
+	
+	/*Стили для основного контента*/
+	/*Стили для поисковика*/
+	.search_bar {
+		width: 400px;
+	}
+	
+	/*Стили для переключателей*/
+	.pointers {
+		font-size: 1.7em;
+		font-weight: bolder;
+	}
+	
+  
+}
+
+/* стили для ширины крупнее компьютерных мониторов */
+/* стили для ширины 1000 пикселов и выше */
+@media (min-width: 950px) {
+	
+	/*Стили для header*/
+	.logo {
+		font-size: 3.2em;
+	}
+	
+	/*Стили для поиска*/
+	.finder {
+		font-size: 24px;
+	}	
+	
+	.finder label {
+		font-weight: bolder;
+	}
+	
+	/*Стили для переключателей*/
+	.pointers {
+		font-size: 1.9em;
+		font-weight: bolder;
+	}
+	
+	/*Стили для табло*/
+	.schedule {
+		font-size: 24px;
+	}
+	
+	/*Вспомогательные стили*/
+
+	.arrow {
+		position: fixed;
+		right: 2%;
+		bottom: 2%;
+		color: red;
+	}
+	
+	
+	
+}
+
+/* стили для ширины крупнее компьютерных HD-мониторов */
+/* стили для ширины 1200 пикселов и выше */
+@media (min-width: 1200px) {
+	/*Стили для header*/
+	.logo {
+		font-size: 3.5em;
+	}
+	
+	/*Стили для основного контента*/
+	/*Стили для поисковика*/	
+	.search_bar {
+		width: 900px;
+	}
+	
+	
+	/*Стили для переключателей*/
+	.pointers {
+		font-size: 2em;
+		font-weight: bolder;
+	}
+	
+	.schedule {
+		font-size: 28px;
+	}
+	
+	.arrow {
+		font-size: 50px;
+	}
+	
+}

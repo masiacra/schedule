@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta name="viewport" content="width=device-width">
+	<meta charset="utf-8">
+	<title>masiacra shedule</title>
+	<link href="styles\normalize.css" rel="stylesheet">
+	<link href="styles\skeleton.css" rel="stylesheet">
+	<link href="styles\custom.css" rel="stylesheet">
+</head>
+<body>
+  <!--Header-->
+  <div class="header">
+    <div class="container">
+      <div class="row logo" lang="en">
+	    Company
+	  </div>
+	  <div class="row">
+          <ul class="navigation">
+            <li>
+			  <a href="#" class="button button-primary">
+			  Табло рейсов
+			  </a>
+		    </li>
+            <li>
+			  <a href="#" class="button">
+				  Услуги
+			  </a>
+		    </li>
+            <li>
+			  <a href="#" class="button">
+				  Схема аэропорта
+			  </a>
+		    </li>
+            <li>
+			  <a href="#" class="button">
+				Парковка
+		      </a>
+		    </li>
+            <li>
+			  <a href="#" class="button">
+				Как добраться
+		      </a>
+	        </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+
+
+<!--Content-->	
+  <div class="container content">
+	<div class="row finder">
+	  <form>
+	    <label>
+			Введите номер рейса:
+			<input type="text" class="search_bar" name="search_bar">
+		</label>
+	    <input type="submit" class="button" value="Искать" name="btn">
+	  </form>
+	</div>
+    <div class="row pointers">	
+	  <div class="three columns pointers__style_current" 
+		data-set-url="data\departure.json">
+		  Вылет
+	  </div>
+	  <div class="three columns" data-set-url="data\arrival_new.json">
+		  Прилет
+	  </div>
+	  <div class="six columns" data-set-url="data\delayed_flights.json">
+		  Задержанные
+	  </div>
+    </div>
+  
+    <div class="schedule">
+	
+    </div>
+  </div>	
+  <div class="arrow arrow__style_hidden">
+  </div>
+<!--Footer-->
+  <div class="footer">
+	&copy;<a href="http://rasp.yandex.ru/">
+		   Данные предоставлены сервисом Яндекс.Расписания"
+		  </a>
+  </div>
+  
+  <script src="scripts\index.js"></script>
+</body>
+</html>
